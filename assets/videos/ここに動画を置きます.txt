@@ -1,0 +1,1 @@
+動画をこのフォルダーに置き、app.jsのguides内のvideoに assets/videos/ファイル名.mp4 を設定します。

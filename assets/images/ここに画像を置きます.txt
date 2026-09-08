@@ -1,0 +1,1 @@
+画像をこのフォルダーに置き、app.jsのguides内のimageに assets/images/ファイル名 を設定します。
