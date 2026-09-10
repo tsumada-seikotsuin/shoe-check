@@ -354,8 +354,8 @@ const guides = [
       "簡単につぶれすぎないか確認してください。"
     ],
     "note": "無理に強い力を加えずに確認してください。",
-    "image": "",
-    "imageAlt": "",
+    "image": "assets/images/heel-counter-check.png",
+    "imageAlt": "ヒールカウンターの確認方法の解説画像",
     "video": "",
     "link": ""
   },
