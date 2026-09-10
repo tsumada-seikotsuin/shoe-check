@@ -324,8 +324,8 @@ const guides = [
       "そのとき、靴がどこで自然に曲がるかを確認します。"
     ],
     "note": "無理に折ろうとせずに確認してください。靴の中央付近から折れていないかも確認してください。",
-    "image": "",
-    "imageAlt": "",
+    "image": "assets/images/flex-check.png",
+    "imageAlt": "靴を両手で持ち、自然に曲がる位置を確認する方法",
     "video": "",
     "link": ""
   },
