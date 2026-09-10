@@ -308,8 +308,8 @@ const guides = [
       "靴を履いた状態で足をつま先側へ寄せ、かかと側に指1本程度入るか確認する。"
     ],
     "note": "約1cm・指1本は簡易的な目安です。足幅・甲の高さ・靴の形などによってフィット感は変わります。",
-    "image": "",
-    "imageAlt": "",
+    "image": "assets/images/size-check.png",
+    "imageAlt": "サイズの確認方法の解説画像",
     "video": "",
     "link": ""
   },
