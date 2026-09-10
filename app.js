@@ -339,8 +339,8 @@ const guides = [
       "簡単にグニャッとねじれすぎないか確認します。"
     ],
     "note": "「曲がる位置」のチェック時に、靴の中央部分から折れていないかも確認してください。",
-    "image": "",
-    "imageAlt": "",
+    "image": "assets/images/shank-check.png",
+    "imageAlt": "シャンクの確認方法の解説画像",
     "video": "",
     "link": ""
   },
