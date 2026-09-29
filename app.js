@@ -5,6 +5,8 @@
 const LINE_CTA_URL = "https://lin.ee/VAjpcR3";
 const SEMINAR_CTA_URL = "https://tsumadaseikotsuin.jp/?p=7158#i-4";
 
+const DATA_API_URL = "https://script.google.com/macros/s/AKfycbzyix_NVaUqNxp1gnK3uTWJiHS6-jkx9ZYFCklicWh293ZGEqZ8nDWOE2dGt63qq1Rxmg/exec";
+
 // question: 質問文 / helpText: 補足 / text: 選択肢 / score: 点数
 // idは判定に使うため、文言を変えるだけの場合は変更しないでください。
 const questions = [
