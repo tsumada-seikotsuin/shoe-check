@@ -457,7 +457,21 @@ function renderQuestion() {
             )}
           </p>
 
-          <div class="answers">
+          ${q.id === "q5" ? `
+  <img
+    src="assets/images/heel-counter-check-v2.png.png"
+    alt="かかとの下側をつまんで確認する位置"
+    style="width:100%; height:auto; border-radius:12px; margin:12px 0 18px;"
+  >
+` : ""}
+
+${q.id === "q8" ? `
+  <img
+    src="assets/images/outsole-wear-check.png.png"
+    alt="左右の靴底の減り方を見比べる"
+    style="width:100%; height:auto; border-radius:12px; margin:12px 0 18px;"
+  >
+` : ""}<div class="answers">
 
             ${q.answers.map(answer => `
               <label class="answer">
