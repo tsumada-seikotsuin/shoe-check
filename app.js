@@ -255,7 +255,7 @@ const guides = [
     ],
     note:
       "無理に強い力を加えずに確認してください。靴の種類や用途によって硬さや構造は異なります。",
-    image: "assets/images/heel-counter-check.png",
+    image: "assets/images/heel-counter-check-v2.png.png",
     imageAlt: "ヒールカウンターの確認方法"
   },
 
@@ -289,8 +289,8 @@ const guides = [
     ],
     note:
       "靴底の減り方だけで、歩き方・回内や回外・身体の状態・ケガのリスクを判断することはできません。",
-    image: "",
-    imageAlt: ""
+    image: "assets/images/outsole-wear-check.png.png",
+    imageAlt: "左右の靴底の減り方を見比べる確認方法"
   }
 ];
 
