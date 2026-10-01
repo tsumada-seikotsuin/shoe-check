@@ -5,7 +5,7 @@
 // ==================================================
 
 // ===== 1. URL設定 =====
-const LINE_CTA_URL = "https://lin.ee/VAjpcR3";
+const LINE_CTA_URL = "https://www.instagram.com/tsumadaseikotsuin/";
 const SEMINAR_CTA_URL = "https://tsumadaseikotsuin.jp/?p=7158#i-4";
 
 const DATA_API_URL =
@@ -885,7 +885,7 @@ function renderResult() {
 
       <p>
         そんな時は、
-        院長公式LINEをご活用ください。
+        Instagramをフォローして、DMで無料相談をご利用ください。
       </p>
 
       ${
@@ -895,7 +895,7 @@ function renderResult() {
               class="button wide"
               href="${escapeHTML(lineCta)}">
 
-              院長公式LINEで相談する
+              InstagramをフォローしてDMで相談する
 
             </a>
           `
@@ -904,7 +904,7 @@ function renderResult() {
               class="button wide"
               disabled>
 
-              院長公式LINEで相談する
+              InstagramをフォローしてDMで相談する
 
             </button>
           `
