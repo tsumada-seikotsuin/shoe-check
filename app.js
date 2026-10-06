@@ -13,6 +13,13 @@ const DATA_API_URL =
 // イベント専用入口の判定
 const urlParams = new URLSearchParams(window.location.search);
 const isYamanami3Days = urlParams.get("event") === "yamanami-3days";
+
+// イベント版ではヘッダー名を切り替える
+const brandName = document.getElementById("brand-name");
+
+if (isYamanami3Days && brandName) {
+  brandName.textContent = "県央やまなみ3Daysウォーク";
+}
 // ===== 2. 質問データ =====
 
 const questions = [
