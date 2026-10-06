@@ -10,7 +10,9 @@ const SEMINAR_CTA_URL = "https://tsumadaseikotsuin.jp/?p=7158#i-4";
 
 const DATA_API_URL =
   "https://script.google.com/macros/s/AKfycbzyix_NVaUqNxp1gnK3uTWJiHS6-jkx9ZYFCklicWh293ZGEqZ8nDWOE2dGt63qq1Rxmg/exec";
-
+// イベント専用入口の判定
+const urlParams = new URLSearchParams(window.location.search);
+const isYamanami3Days = urlParams.get("event") === "yamanami-3days";
 // ===== 2. 質問データ =====
 
 const questions = [
@@ -373,32 +375,44 @@ function resultSymbol(result) {
 // ===== 7. スタート =====
 
 function renderStart() {
+  const startContent = isYamanami3Days
+    ? {
+        pill: "参加される方へ・全8問",
+        title: "県央やまなみ3Daysウォーク<br>（秦野・伊勢原・厚木）",
+        sub: "完歩を目指すための<br>靴セルフチェック",
+        lead: "参加予定の靴を見ながら、<br>8つの質問に答えてください。",
+        muted: "最後まで楽しく歩くために、<br>事前に確認しておきたい靴のポイントをチェックできます。"
+      }
+    : {
+        pill: "保護者の方へ・全8問",
+        title: "お子さんの靴、<br>大丈夫？",
+        sub: "60秒でできる<br>靴のセルフチェック",
+        lead: "今履いている靴を見ながら、<br>8つの質問に答えてください。",
+        muted: "サイズ・かかと・靴の構造・靴紐・靴底などから、<br>確認しておきたいポイントをチェックできます。"
+      };
+
   app.innerHTML = `
     <section class="card intro">
       <p class="eyebrow">FOOT & SHOE CHECK</p>
 
       <span class="pill">
-        保護者の方へ · 全8問
+        ${startContent.pill}
       </span>
 
       <h1 tabindex="-1">
-        お子さんの靴、<br>
-        大丈夫？
+        ${startContent.title}
       </h1>
 
       <p class="sub">
-        60秒でできる<br>
-        靴のセルフチェック
+        ${startContent.sub}
       </p>
 
       <p>
-        今履いている靴を見ながら、
-        8つの質問に答えてください。
+        ${startContent.lead}
       </p>
 
       <p class="muted">
-        サイズ・かかと・靴の構造・靴紐・靴底などから、
-        確認しておきたいポイントをチェックできます。
+        ${startContent.muted}
       </p>
 
       <div class="intro-facts">
