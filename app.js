@@ -18,7 +18,7 @@ const isYamanami3Days = urlParams.get("event") === "yamanami-3days";
 const brandName = document.getElementById("brand-name");
 
 if (isYamanami3Days && brandName) {
-  brandName.textContent = "県央やまなみ3Daysウォーク";
+  brandName.textContent = "２０２６あつぎウォーク";
 }
 // ===== 2. 質問データ =====
 
@@ -385,9 +385,9 @@ function renderStart() {
   const startContent = isYamanami3Days
     ? {
         pill: "参加される方へ・全8問",
-        title: "県央やまなみ3Daysウォーク<br>（秦野・伊勢原・厚木）",
+        title: "２０２６あつぎウォーク",
         sub: "完歩を目指すための<br>靴セルフチェック",
-        lead: "参加予定の靴を見ながら、<br>8つの質問に答えてください。",
+        lead: "参加する靴を見ながら、<br>8つの質問に答えてください。",
         muted: "最後まで楽しく歩くために、<br>事前に確認しておきたい靴のポイントをチェックできます。"
       }
     : {
