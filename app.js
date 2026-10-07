@@ -1460,6 +1460,7 @@ function createSurveyPayload() {
   }
 
   const payload = {
+    entrySource: isYamanami3Days ? "あつぎウォーク" : "通常",
     ageGroup,
     gender,
     sports,
